@@ -5,7 +5,7 @@ client.on('voiceStateUpdate', (old, now) => {
   const channel = client.channels.get('509827374561624080');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
-  if (!size) return channel.setName(`Ritual Online : ${currentSize} `);
+  if (!size) return channel.setName(`Universe Online : ${currentSize} `);
   if (currentSize !== size) channel.setName(`Universe Online : ${currentSize} `);
 });
 
