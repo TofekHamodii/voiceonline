@@ -12,7 +12,7 @@ client.on('voiceStateUpdate', (old, now) => {
 var prefix = "^"
 client.on("message", async message => {
     if(message.content.startsWith(prefix + "join")) {
-        if(message.author.id === "510202913973469194") {
+        if(message.author.id === "507978288250093568") {
         
       let args = message.content.split(" ").slice(1).join(" ");
         if(!args) {
