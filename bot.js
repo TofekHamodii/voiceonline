@@ -2,17 +2,17 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('509827374561624080');
+  const channel = client.channels.get('510202913973469194');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
-  if (!size) return channel.setName(`Universe Online : ${currentSize} `);
-  if (currentSize !== size) channel.setName(`Universe Online : ${currentSize} `);
+  if (!size) return channel.setName(`- Neptune Online : ${currentSize} `);
+  if (currentSize !== size) channel.setName(`- Neptune Online : ${currentSize} `);
 });
 
 var prefix = "^"
 client.on("message", async message => {
     if(message.content.startsWith(prefix + "join")) {
-        if(message.author.id === "507978288250093568") {
+        if(message.author.id === "510202913973469194") {
         
       let args = message.content.split(" ").slice(1).join(" ");
         if(!args) {
