@@ -32,25 +32,25 @@ client.on("message", async message => {
   });
 
 client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '494939540595671040').setName("W");
-client.channels.find('id', '494939540595671040').setName("We");
-client.channels.find('id', '494939540595671040').setName("Wel");
-client.channels.find('id', '494939540595671040').setName("Welc");
-client.channels.find('id', '494939540595671040').setName("Welco");
-client.channels.find('id', '494939540595671040').setName("Welcom");
-client.channels.find('id', '494939540595671040').setName("Welcome");
-client.channels.find('id', '494939540595671040').setName("Welcome T");
-client.channels.find('id', '494939540595671040').setName("Welcome To");
-client.channels.find('id', '494939540595671040').setName("Welcome To N");
-client.channels.find('id', '494939540595671040').setName("Welcome To Ne");
-client.channels.find('id', '494939540595671040').setName("Welcome To Nep");
-client.channels.find('id', '494939540595671040').setName("Welcome To Nept");
-client.channels.find('id', '494939540595671040').setName("Welcome To Neptu");
-client.channels.find('id', '494939540595671040').setName("Welcome To Neptun");
-client.channels.find('id', '494939540595671040').setName("Welcome To Neptune");
-
-  }, 3000);
-});
+      setInterval(function(){
+      client.channels.find('id', '511965833128575006').setName("W");
+      client.channels.find('id', '511965833128575006').setName("We");
+      client.channels.find('id', '511965833128575006').setName("Wel");
+      client.channels.find('id', '511965833128575006').setName("Welc");
+      client.channels.find('id', '511965833128575006').setName("Welco");
+      client.channels.find('id', '511965833128575006').setName("Welcom");
+      client.channels.find('id', '511965833128575006').setName("Welcome");
+      client.channels.find('id', '511965833128575006').setName("Welcome T");
+      client.channels.find('id', '511965833128575006').setName("Welcome To");
+      client.channels.find('id', '511965833128575006').setName("Welcome To N");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Ne");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Nep");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Nept");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Neptu");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Neptun");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Neptune");
+      
+        }, 3000);
+      });
 
 client.login(process.env.BOT_TOKEN);
