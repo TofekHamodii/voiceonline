@@ -48,7 +48,7 @@ client.on("ready", async  => {
       client.channels.find('id', '511965833128575006').setName("Welcome To Nept");
       client.channels.find('id', '511965833128575006').setName("Welcome To Neptu");
       client.channels.find('id', '511965833128575006').setName("Welcome To Neptun");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Neptune");
+      client.channels.find('id', '511965833128575006').setName("Welcome To Neptuné");
       
         }, 3000);
       });
