@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('511965965442088966');
+  const channel = client.channels.get('515164603076968469');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
   if (!size) return channel.setName(`- Voice Online : ${currentSize} `);
@@ -12,7 +12,7 @@ client.on('voiceStateUpdate', (old, now) => {
 var prefix = "^"
 client.on("message", async message => {
     if(message.content.startsWith(prefix + "join")) {
-        if(message.author.id === "507978288250093568") {
+        if(message.author.id === "515164603076968469") {
         
       let args = message.content.split(" ").slice(1).join(" ");
         if(!args) {
@@ -31,27 +31,7 @@ client.on("message", async message => {
   }
   });
 
-client.on("ready", async  => {
-      setInterval(function(){
-      client.channels.find('id', '511965833128575006').setName("W");
-      client.channels.find('id', '511965833128575006').setName("We");
-      client.channels.find('id', '511965833128575006').setName("Wel");
-      client.channels.find('id', '511965833128575006').setName("Welc");
-      client.channels.find('id', '511965833128575006').setName("Welco");
-      client.channels.find('id', '511965833128575006').setName("Welcom");
-      client.channels.find('id', '511965833128575006').setName("Welcome");
-      client.channels.find('id', '511965833128575006').setName("Welcome T");
-      client.channels.find('id', '511965833128575006').setName("Welcome To");
-      client.channels.find('id', '511965833128575006').setName("Welcome To N");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Ne");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Nep");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Nept");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Neptu");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Neptun");
-      client.channels.find('id', '511965833128575006').setName("Welcome To Neptuné");
-      
-        }, 3000);
-      });
+
 
 client.on('message', msg => {
 
@@ -65,7 +45,7 @@ client.on('message', msg => {
 }
 })
 client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("511987083322327053").join(); //by : iBeAnthonyD
+    client.channels.get("515164603076968469").join(); //by : iBeAnthonyD
     });
 
 client.login(process.env.BOT_TOKEN);
