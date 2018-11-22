@@ -5,7 +5,7 @@ client.on('voiceStateUpdate', (old, now) => {
   const channel = client.channels.get('515164603076968469');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
-  if (!size) return channel.setName(`` Neptune Voice : ${currentSize} `);
+  if (!size) return channel.setName(` Neptune Voice : ${currentSize} `);
   if (currentSize !== size) channel.setName(` Neptune Voice : ${currentSize} `);
 });
 
