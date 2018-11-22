@@ -33,19 +33,4 @@ client.on("message", async message => {
 
 
 
-client.on('message', msg => {
-
-    if (msg.content == '.join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
-}
-})
-client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("515164603076968469").join(); //by : iBeAnthonyD
-    });
-
 client.login(process.env.BOT_TOKEN);
